@@ -1,16 +1,26 @@
-# Makefile для управления установкой зависимостей с помощью Poetry
+# Makefile для управления зависимостями, сборкой и публикацией с помощью Poetry
+
+# Переменные
+POETRY = poetry
+PYTHON = python
 
 # Цель по умолчанию
 install:
-	poetry install
+	$(POETRY) install
 
 # Цель для запуска brain-games
 brain-games:
 	$(POETRY) run brain-games
 
-# Определение переменных (опционально)
-POETRY = poetry
+# Цель для сборки пакета
+build:
+	$(POETRY) build
 
-# Использование переменной для установки
-install_with_var:
-	$(POETRY) install
+# Цель для тестовой публикации
+publish-dry-run:
+	$(POETRY) publish --dry-run
+
+# Цель для установки собранного пакета
+package-install:
+	$(PYTHON) -m pip install --user dist/*.whl
+
