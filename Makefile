@@ -24,3 +24,7 @@ publish-dry-run:
 package-install:
 	$(PYTHON) -m pip install --user dist/*.whl
 
+# Цель для проверки flake8
+lint:
+	$(POETRY) run flake8 brain_games
+
