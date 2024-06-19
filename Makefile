@@ -12,6 +12,10 @@ install:
 brain-games:
 	$(POETRY) run brain-games
 
+# Цель для запуска brain-games
+brain-even:
+	$(POETRY) run brain-even
+
 # Цель для сборки пакета
 build:
 	$(POETRY) build
