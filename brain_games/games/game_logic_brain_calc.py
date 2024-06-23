@@ -1,5 +1,5 @@
 import random
-from brain_games.game_mechanics import welcome_user, play_round
+from brain_games.games.game_mechanics import welcome_user, play_round
 
 
 def generate_expression():
