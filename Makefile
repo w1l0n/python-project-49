@@ -16,6 +16,10 @@ brain-games:
 brain-even:
 	$(POETRY) run brain-even
 
+# Цель для запуска brain-calc
+brain-calc:
+	$(POETRY) run brain-calc
+
 # Цель для сборки пакета
 build:
 	$(POETRY) build
