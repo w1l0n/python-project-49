@@ -10,7 +10,7 @@ def welcome_user():
 
 def ask_question(question):
     print(f'Question: {question}')
-    return prompt.string(f'Your answer: ')
+    return prompt.string('Your answer: ')
 
 
 def play_round(question, correct_answer):
