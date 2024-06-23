@@ -20,6 +20,10 @@ brain-even:
 brain-calc:
 	$(POETRY) run brain-calc
 
+# Цель для запуска brain-gcd
+brain-gcd:
+	$(POETRY) run brain-gcd
+
 # Цель для сборки пакета
 build:
 	$(POETRY) build
