@@ -25,7 +25,7 @@ def play_game():
     while correct_answer_count < 3:
 
         value_one, operation, value_two, correct_answer = generate_expression()
-        question = f'{value_one}{operation}{value_two}'
+        question = f'{value_one} {operation} {value_two}'
 
         correct_answer = str(correct_answer)
 
