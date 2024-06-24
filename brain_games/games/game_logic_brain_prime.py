@@ -31,5 +31,3 @@ def play_game():
             print(f"Let's try again, {name}!")
             return
     print(f"Congratulations, {name}!")
-
-play_game()
