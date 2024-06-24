@@ -3,13 +3,10 @@ from brain_games.games.game_mechanics import welcome_user, play_round
 
 
 def get_random():
-    n = random.randint(2, 20)
-    return n
+    return random.randint(2, 20)
 
 
-def is_prime():
-    n = get_random()
-
+def is_prime(n):
     if n <= 1:
         return False
     for i in range(2, int(n ** 0.5) + 1):
@@ -26,7 +23,7 @@ def play_game():
     while correct_answer_count < 3:
 
         question = get_random()
-        correct_answer = 'yes' if is_prime() else 'no'
+        correct_answer = 'yes' if is_prime(question) else 'no'
 
         if play_round(question, correct_answer):
             correct_answer_count += 1
@@ -34,3 +31,5 @@ def play_game():
             print(f"Let's try again, {name}!")
             return
     print(f"Congratulations, {name}!")
+
+play_game()
