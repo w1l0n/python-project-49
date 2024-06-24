@@ -24,6 +24,10 @@ brain-calc:
 brain-gcd:
 	$(POETRY) run brain-gcd
 
+# Цель для запуска brain-progression
+brain-progression:
+	$(POETRY) run brain-progression
+
 # Цель для сборки пакета
 build:
 	$(POETRY) build
