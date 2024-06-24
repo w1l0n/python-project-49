@@ -4,7 +4,7 @@ from brain_games.games.game_mechanics import welcome_user, play_round
 
 def play_game():
     name = welcome_user()
-    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
     correct_answer_count = 0
     while correct_answer_count < 3:
