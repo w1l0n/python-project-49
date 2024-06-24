@@ -38,6 +38,3 @@ def play_game():
             return
 
     print(f"Congratulations, {name}!")
-
-
-play_game()
