@@ -28,6 +28,10 @@ brain-gcd:
 brain-progression:
 	$(POETRY) run brain-progression
 
+# Цель для запуска brain-pime
+brain-prime:
+	$(POETRY) run brain-prime
+
 # Цель для сборки пакета
 build:
 	$(POETRY) build
